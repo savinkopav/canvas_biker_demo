@@ -86,9 +86,9 @@ function loop() {
 }
 
 onkeydown = e => {
-    if (e.key === "w" && (player.y === 360)) player.y -= 230;
-    if (e.key === "d" && player.x < cvs.width - player.w) player.x += 20;
-    if (e.key === "a" && player.x > 0) player.x -= 20;
+    if ((e.key === "w" || e.key === "ц") && (player.y === 360)) player.y -= 230;
+    if ((e.key === "d" || e.key === "в") && player.x < cvs.width - player.w) player.x += 20;
+    if ((e.key === "a" || e.key === "ф") && player.x > 0) player.x -= 20;
 };
 
 document.getElementById("start").onclick = loop;
